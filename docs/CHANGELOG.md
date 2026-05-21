@@ -1,3 +1,9 @@
+## [1.1.1](https://github.com/amtins/shiny-eureka/compare/v1.1.0...v1.1.1) (2026-05-21)
+
+### Enhancements and Bug Fixes 🐛
+
+* empty fixolero ([af1ecac](https://github.com/amtins/shiny-eureka/commit/af1ecac3a6d8682db65e1a0a0bfa1ef3ec307a93))
+
 ## [1.1.0](https://github.com/amtins/shiny-eureka/compare/v1.0.2...v1.1.0) (2026-05-21)
 
 ### New Features 🚀
