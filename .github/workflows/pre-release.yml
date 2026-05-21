@@ -1,0 +1,63 @@
+name: Pre-release tag
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish-dist-tag:
+    runs-on: ubuntu-latest
+    environment: npmjs
+
+    permissions:
+      packages: write
+      issues: write
+      contents: write
+      pull-requests: write
+      id-token: write
+
+    steps:
+      - name: Generate Token
+        id: get_workflow_token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.SEMANTIC_RELEASE_APP_ID }}
+          private-key: ${{ secrets.SEMANTIC_RELEASE_APP_PRIVATE_KEY }}
+
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          token: ${{ steps.get_workflow_token.outputs.token }}
+          persist-credentials: false
+          fetch-depth: 0
+
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v6
+        with:
+          node-version-file: '.nvmrc'
+
+      - name: Install dependencies
+        env :
+          CI: true
+        run: |
+          npm pkg delete scripts.prepare
+          npm ci
+
+      - name: Run build
+        run: |
+          npm run build
+
+      - name: Pre-release tag main 📦
+        if: success()
+        run: npm run release:ci
+        env:
+          GITHUB_TOKEN: ${{ steps.get_workflow_token.outputs.token }}
+          NPM_CONFIG_PROVENANCE: true
+
+      - name: Pre-release main tag failed 🫣
+        if: failure()
+        run: |
+          echo "It seems something didn't go as planned 🤔"
+          exit 1
