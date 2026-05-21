@@ -7,9 +7,11 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
+    environment: npmjs
 
     permissions:
       packages: write
+      id-token: write
 
     steps:
       - name: Setup node
@@ -19,5 +21,3 @@ jobs:
       - run: |
           npm dist-tag add @amtins/shiny-eureka@$(echo "${{github.ref_name}}" | cut -c 2-) latest
           exit 0
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
