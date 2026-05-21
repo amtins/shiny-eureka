@@ -18,6 +18,6 @@ jobs:
         uses: actions/setup-node@v6
         with:
           registry-url: 'https://registry.npmjs.org'
-      - run: |
-          npm dist-tag add @amtins/shiny-eureka@$(echo "${{github.ref_name}}" | cut -c 2-) latest
-          exit 0
+      - run: npm dist-tag add @amtins/shiny-eureka@${GITHUB_REF_NAME#v} latest
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
