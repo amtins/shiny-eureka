@@ -30,13 +30,6 @@ jobs:
         with:
           node-version-file: '.nvmrc'
 
-      - name: Install dependencies
-        env :
-          CI: true
-        run: |
-          npm pkg delete scripts.prepare
-          npm ci
-
       - name: Run build
         run: |
           npm run build
