@@ -1,3 +1,9 @@
+## [1.0.2](https://github.com/amtins/shiny-eureka/compare/v1.0.1...v1.0.2) (2026-05-21)
+
+### Enhancements and Bug Fixes 🐛
+
+* release npm version ([83d32f7](https://github.com/amtins/shiny-eureka/commit/83d32f7064ea2905fd26d9583f5ac420f3223092))
+
 ## [1.0.1](https://github.com/amtins/shiny-eureka/compare/v1.0.0...v1.0.1) (2026-05-21)
 
 ### Chore 🧹
