@@ -7,7 +7,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/amtins/shiny-eureka.git"
+    "url": "git+https://github.com/amtins/shiny-eureka.git"
   },
   "main": "index.js",
   "scripts": {
