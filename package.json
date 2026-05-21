@@ -2,6 +2,9 @@
   "name": "@amtins/shiny-eureka",
   "version": "1.0.0",
   "description": "",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
