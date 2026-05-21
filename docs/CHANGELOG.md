@@ -1,3 +1,9 @@
+## [1.1.3](https://github.com/amtins/shiny-eureka/compare/v1.1.2...v1.1.3) (2026-05-21)
+
+### Enhancements and Bug Fixes 🐛
+
+* npm token and simplify dist tag ([d4c59db](https://github.com/amtins/shiny-eureka/commit/d4c59db7e8626c23fafbe0ef9b593a4784d79e22))
+
 ## [1.1.2](https://github.com/amtins/shiny-eureka/compare/v1.1.1...v1.1.2) (2026-05-21)
 
 ### Enhancements and Bug Fixes 🐛
