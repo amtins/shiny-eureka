@@ -1,5 +1,17 @@
 ## [1.0.1](https://github.com/amtins/shiny-eureka/compare/v1.0.0...v1.0.1) (2026-05-21)
 
+### Chore 🧹
+
+* re run CI ([a661c9a](https://github.com/amtins/shiny-eureka/commit/a661c9aeb3af8ce625a0ffdff3d8cd2fd50afed5))
+* **release:** 1.0.1 [skip ci] ([3757d4c](https://github.com/amtins/shiny-eureka/commit/3757d4c61b878776e038297bf6a0282a8907e601))
+* remove npm token and update repo url ([cb7593d](https://github.com/amtins/shiny-eureka/commit/cb7593de02c4d8489a5d685e95e886ff93d0eb9f))
+
+### Enhancements and Bug Fixes 🐛
+
+* new fix ([939577c](https://github.com/amtins/shiny-eureka/commit/939577c3854fdb8be8de2db9711427db965d5769))
+
+## [1.0.1](https://github.com/amtins/shiny-eureka/compare/v1.0.0...v1.0.1) (2026-05-21)
+
 ### Enhancements and Bug Fixes 🐛
 
 * new fix ([939577c](https://github.com/amtins/shiny-eureka/commit/939577c3854fdb8be8de2db9711427db965d5769))
