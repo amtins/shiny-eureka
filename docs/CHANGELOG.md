@@ -1,3 +1,9 @@
+## [1.2.2](https://github.com/amtins/shiny-eureka/compare/v1.2.1...v1.2.2) (2026-05-27)
+
+### Enhancements and Bug Fixes 🐛
+
+* **release:** rename package ([4ca39f6](https://github.com/amtins/shiny-eureka/commit/4ca39f6337b734601cb11d5516e0e9073b04f0b6))
+
 ## [1.2.1](https://github.com/amtins/shiny-eureka/compare/v1.2.0...v1.2.1) (2026-05-27)
 
 ### Enhancements and Bug Fixes 🐛
