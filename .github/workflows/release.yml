@@ -19,7 +19,7 @@ jobs:
         with:
           registry-url: 'https://registry.npmjs.org'
       - run: |
-          npm dist-tag add @srgssr/pillarbox-web@$(echo "${{github.ref_name}}" | cut -c 2-) latest
+          npm dist-tag add @amtins/shiny-eureka@$(echo "${{github.ref_name}}" | cut -c 2-) latest
           exit 0
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
