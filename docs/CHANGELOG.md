@@ -1,3 +1,9 @@
+## [1.2.0](https://github.com/amtins/shiny-eureka/compare/v1.1.3...v1.2.0) (2026-05-27)
+
+### New Features 🚀
+
+* new feature ([b9227e9](https://github.com/amtins/shiny-eureka/commit/b9227e958cb3e4592ef91f97823126361dc27149))
+
 ## [1.1.3](https://github.com/amtins/shiny-eureka/compare/v1.1.2...v1.1.3) (2026-05-21)
 
 ### Enhancements and Bug Fixes 🐛
